@@ -2,6 +2,9 @@
     |navigation-bar|
     |home-page|
     |branding|
+    |intergrated|
+    |packaging|
+    |in-printing|
     |footer|
 */
 
@@ -314,12 +317,84 @@ p {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-.dm {
+.dm, .bgpkg, .inprtg {
     background-color: rgb(96, 138, 180);
 }
 
-.bgpkg {
-    background-color: rgb(96, 138, 180);
+/* *in-printing* */
+
+.inprinting {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.inprinting-col {
+    flex-basis: 100%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.inprinting-col img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.inprinting-col p {
+    padding: 0;
+}
+
+.inprinting-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.inprinting-col img:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    min-width: 400px;
+    text-align: left;
+}
+
+.responsive-table th,
+.responsive-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.responsive-table th {
+    background-color: #8BC34A;
+    color: white;
+    text-transform: uppercase;
+}
+
+.responsive-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.responsive-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.responsive-table td {
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .responsive-table {
+        display: block;
+        overflow-x: auto;
+    }
 }
 
 /* *footer* */
