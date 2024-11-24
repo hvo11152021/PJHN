@@ -1,6 +1,7 @@
 /* Contents of this file:
     |navigation-bar|
     |home-page|
+    |branding|
     |footer|
 */
 
@@ -151,6 +152,77 @@ nav .fa {
     background: #0082e6;
     border: 1px solid #0082e6;
     transition: 1s;
+}
+
+/* *branding* */
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.branding {
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    width: 80%;
+}
+
+.branding-col {
+    background-color: rgb(200, 210, 230);
+    border-radius: 10px;
+    flex-basis: 31%;
+    height: fit-content;
+    margin-bottom: 5%;
+    padding: 20px 5px;
+    text-align: center;
+}
+
+.branding-col img {
+    border-radius: 10px;
+    margin: 2% 0%;
+    transition: 0.5s;
+    width: 90%;
+}
+
+.branding-col p {
+    padding: 0;
+}
+
+.branding-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.branding-col img:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
 }
 
 /* *footer* */
